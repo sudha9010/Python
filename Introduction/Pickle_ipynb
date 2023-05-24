@@ -1,0 +1,49 @@
+#Try all data types (basic and data structures) in python for pickling and unpickling
+
+import pickle
+
+data1 = 42
+print("Int:")
+pickled_data1 = pickle.dumps(data1)
+unpickled_data1 = pickle.loads(pickled_data1)
+print(" data before pickling:", data1)
+print(" data after pickling:", pickled_data1)
+print(" data after Unpickling :", unpickled_data1)
+print("\n")
+
+data2 = 3.14
+print("Float:")
+pickled_data2 = pickle.dumps(data2)
+unpickled_data2 = pickle.loads(pickled_data2)
+print("Original data:", data2)
+print("Pickled data:", pickled_data2)
+print("Unpickled data:", unpickled_data2)
+print("\n")
+
+data3 = "Sudha Vankayalapati!"
+print("String:")
+pickled_data3 = pickle.dumps(data3)
+unpickled_data3 = pickle.loads(pickled_data3)
+print("Original data:", data3)
+print("Pickled data:", pickled_data3)
+print("Unpickled data:", unpickled_data3)
+print("\n")
+
+# Pickling and Unpickling data structures
+data4 = [1, 2, 3, 4, 5]
+print("List:")
+pickled_data4 = pickle.dumps(data4)
+unpickled_data4 = pickle.loads(pickled_data4)
+print("Original data:", data4)
+print("Pickled data:", pickled_data4)
+print("Unpickled data:", unpickled_data4)
+print("\n")
+
+data5 = {"name": "sudha", "age": 30, "city": "India"}
+print("Dictionary:")
+pickled_data5 = pickle.dumps(data5)
+unpickled_data5 = pickle.loads(pickled_data5)
+print("Original data:", data5)
+print("Pickled data:", pickled_data5)
+print("Unpickled data:", unpickled_data5)
+
